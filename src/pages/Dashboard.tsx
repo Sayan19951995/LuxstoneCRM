@@ -13,7 +13,6 @@ import {
 } from 'lucide-react';
 
 interface DashboardProps {
-  userId: string;
 }
 
 // --- ФИКтивные ДАННЫЕ (Fake Data) ---
@@ -59,7 +58,7 @@ const FAKE_IN_TRANSIT_DATA = [
 
 const COLORS_CHART = ['#51d087', '#4299e1', '#f6ad55', '#fc8181', '#667eea', '#ed8936']; // Более яркие цвета для графиков
 
-const Dashboard: React.FC<DashboardProps> = ({ userId }) => {
+const Dashboard: React.FC<DashboardProps> = ({ }) => {
   const [monthlySalesData, setMonthlySalesData] = useState<any[]>([]);
   const [weeklySalesData, setWeeklySalesData] = useState<any[]>([]);
   const [inventorySummary, setInventorySummary] = useState<any[]>([]);
